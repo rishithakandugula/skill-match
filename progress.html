@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Progress — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="progress">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    S
+                </span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+                <a href="recommendations.html">
+                    Recommendations
+                </a>
+
+            </nav>
+
+
+            <a href="profile.html" class="profile-link">
+                Profile
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <span class="section-label">
+                Track Your Growth
+            </span>
+
+            <h1>
+                My Progress
+            </h1>
+
+            <p>
+                Monitor your skills, learning activities, projects
+                and overall career readiness.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= OVERALL PROGRESS ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        Overview
+                    </span>
+
+                    <h2>
+                        Your Learning Progress
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="progress-summary-grid">
+
+
+                <!-- Average Skill -->
+
+                <div class="progress-summary-card">
+
+                    <div class="summary-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Average Skill
+                        </span>
+
+                        <h3 id="averageSkill">
+                            0%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course Progress -->
+
+                <div class="progress-summary-card">
+
+                    <div class="summary-icon">
+                        📚
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Course Progress
+                        </span>
+
+                        <h3 id="courseProgress">
+                            0%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project Progress -->
+
+                <div class="progress-summary-card">
+
+                    <div class="summary-icon">
+                        💻
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Project Progress
+                        </span>
+
+                        <h3 id="projectProgress">
+                            0%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Assessment Progress -->
+
+                <div class="progress-summary-card">
+
+                    <div class="summary-icon">
+                        📝
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Assessments
+                        </span>
+
+                        <h3 id="assessmentProgress">
+                            0%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SKILL PROGRESS ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        Skills
+                    </span>
+
+                    <h2>
+                        Skill Development
+                    </h2>
+
+                    <p>
+                        Track your current skill level and compare it
+                        with your target level.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="skills.html"
+                    class="outline-btn">
+
+                    Manage Skills
+
+                </a>
+
+            </div>
+
+
+            <div
+                id="skillProgressList"
+                class="skill-progress-list">
+
+                <!-- progress.js will insert skills here -->
+
+                <div class="loading-card">
+
+                    Loading skill progress...
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LEARNING PROGRESS ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        Learning
+                    </span>
+
+                    <h2>
+                        Learning Activities
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="learning-progress-grid">
+
+
+                <!-- Courses -->
+
+                <div
+                    id="courseProgressDetails"
+                    class="learning-progress-card">
+
+                    <!-- progress.js content -->
+
+                    <div class="loading-card">
+                        Loading course progress...
+                    </div>
+
+                </div>
+
+
+                <!-- Projects -->
+
+                <div
+                    id="projectProgressDetails"
+                    class="learning-progress-card">
+
+                    <!-- progress.js content -->
+
+                    <div class="loading-card">
+                        Loading project progress...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CAREER READINESS ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="career-readiness-card">
+
+
+                <div class="career-readiness-content">
+
+                    <span class="section-label">
+                        Career Readiness
+                    </span>
+
+                    <h2>
+                        How Ready Are You?
+                    </h2>
+
+                    <p id="careerReadinessMessage">
+                        Calculating your career readiness...
+                    </p>
+
+
+                    <div class="career-progress-wrapper">
+
+                        <div class="career-progress-bar">
+
+                            <div
+                                id="careerReadinessBar"
+                                class="career-progress-fill"
+                                style="width: 0%;">
+
+                            </div>
+
+                        </div>
+
+
+                        <strong id="careerReadiness">
+                            0%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="career-readiness-icon">
+                    🚀
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= NEXT LEARNING GOAL ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        Keep Growing
+                    </span>
+
+                    <h2>
+                        Your Next Goal
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="nextLearningGoal">
+
+                <!-- progress.js will insert next goal -->
+
+                <div class="loading-card">
+                    Finding your next learning goal...
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LEARNING HOURS ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="learning-hours-card">
+
+                <div class="learning-hours-icon">
+                    ⏱️
+                </div>
+
+
+                <div>
+
+                    <span class="section-label">
+                        Learning Time
+                    </span>
+
+                    <h2 id="learningHours">
+                        0 hrs
+                    </h2>
+
+                    <p>
+                        Total time spent learning and improving
+                        your technical skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ACTION BUTTONS ================= -->
+
+    <section class="progress-section">
+
+        <div class="container">
+
+            <div class="progress-actions">
+
+                <a
+                    href="recommendations.html"
+                    class="primary-btn">
+
+                    Get New Recommendations
+
+                </a>
+
+
+                <a
+                    href="skills.html"
+                    class="outline-btn">
+
+                    Improve Skills
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="danger-btn"
+                    onclick="SkillMatchProgress.resetProgress()">
+
+                    Reset Progress
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo">
+
+                    <span class="logo-mark">
+                        S
+                    </span>
+
+                    <span class="logo-text">
+                        SkillMatch
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Learn the right skills. Build your future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SkillMatch. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+    <script src="progress.js"></script>
+
+
+</body>
+
+</html>

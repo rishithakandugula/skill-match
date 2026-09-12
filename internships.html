@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internships — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="internships">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">S</span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html" class="active">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="btn btn-outline">
+                    Login
+                </a>
+
+                <a href="register.html" class="btn btn-primary">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="section-badge">
+                    🎓 Internship Opportunities
+                </span>
+
+                <h1>
+                    Find Internships That Match Your Skills
+                </h1>
+
+                <p>
+                    Explore internships that match your skills,
+                    interests, education, and career goals.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SEARCH & FILTER ================= -->
+
+        <section class="jobs-search-section">
+
+            <div class="container">
+
+                <div class="search-filter-box">
+
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <span class="search-icon">
+                            🔍
+                        </span>
+
+                        <input
+                            type="text"
+                            id="internshipSearch"
+                            placeholder="Search internships, skills, companies..."
+                        >
+
+                    </div>
+
+
+
+                    <!-- Location -->
+
+                    <select id="locationFilter">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                        <option value="hyderabad">
+                            Hyderabad
+                        </option>
+
+                        <option value="bangalore">
+                            Bangalore
+                        </option>
+
+                        <option value="chennai">
+                            Chennai
+                        </option>
+
+                        <option value="pune">
+                            Pune
+                        </option>
+
+                    </select>
+
+
+
+                    <!-- Duration -->
+
+                    <select id="durationFilter">
+
+                        <option value="all">
+                            All Durations
+                        </option>
+
+                        <option value="1-3">
+                            1 – 3 Months
+                        </option>
+
+                        <option value="3-6">
+                            3 – 6 Months
+                        </option>
+
+                        <option value="6+">
+                            6+ Months
+                        </option>
+
+                    </select>
+
+
+
+                    <!-- Internship Type -->
+
+                    <select id="internshipTypeFilter">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                        <option value="hybrid">
+                            Hybrid
+                        </option>
+
+                        <option value="onsite">
+                            On-site
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= INTERNSHIPS ================= -->
+
+        <section class="jobs-section">
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <h2>
+                            Recommended Internships
+                        </h2>
+
+                        <p>
+                            Opportunities selected according to your skill profile.
+                        </p>
+
+                    </div>
+
+                    <span
+                        id="internshipCount"
+                        class="results-count"
+                    >
+                        6 Internships Found
+                    </span>
+
+                </div>
+
+
+
+                <!-- Internship Grid -->
+
+                <div
+                    class="jobs-grid"
+                    id="internshipsGrid"
+                >
+
+
+                    <!-- ================= INTERNSHIP 1 ================= -->
+
+                    <article
+                        class="job-card"
+                        data-title="Frontend Developer Intern"
+                        data-company="Tech Solutions"
+                        data-location="hyderabad"
+                        data-duration="3-6"
+                        data-type="hybrid"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                TS
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveInternship(this)"
+                                title="Save Internship"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Hybrid
+                        </span>
+
+
+                        <h3>
+                            Frontend Developer Intern
+                        </h3>
+
+
+                        <p class="company-name">
+                            Tech Solutions
+                        </p>
+
+
+                        <p class="job-location">
+                            📍 Hyderabad · Hybrid
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹15,000 – ₹25,000 / month
+                        </div>
+
+
+                        <!-- Match -->
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    94%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:94%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Skills -->
+
+                        <div class="skill-tags">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                React
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                ⏱ 3 – 6 Months
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyInternship('Frontend Developer Intern')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================= INTERNSHIP 2 ================= -->
+
+                    <article
+                        class="job-card"
+                        data-title="React Developer Intern"
+                        data-company="WebWorks"
+                        data-location="bangalore"
+                        data-duration="3-6"
+                        data-type="hybrid"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                WW
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveInternship(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Hybrid
+                        </span>
+
+
+                        <h3>
+                            React Developer Intern
+                        </h3>
+
+
+                        <p class="company-name">
+                            WebWorks
+                        </p>
+
+
+                        <p class="job-location">
+                            📍 Bangalore · Hybrid
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹18,000 – ₹30,000 / month
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    89%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:89%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>
+                                React
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                Git
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                ⏱ 3 – 6 Months
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyInternship('React Developer Intern')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================= INTERNSHIP 3 ================= -->
+
+                    <article
+                        class="job-card"
+                        data-title="Python Developer Intern"
+                        data-company="CodeLabs"
+                        data-location="remote"
+                        data-duration="1-3"
+                        data-type="remote"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                CL
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveInternship(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+
+                        <h3>
+                            Python Developer Intern
+                        </h3>
+
+
+                        <p class="company-name">
+                            CodeLabs
+                        </p>
+
+
+                        <p class="job-location">
+                            🌐 Remote
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹12,000 – ₹20,000 / month
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    86%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:86%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                SQL
+                            </span>
+
+                            <span>
+                                APIs
+                            </span>
+
+                            <span>
+                                Git
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                ⏱ 1 – 3 Months
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyInternship('Python Developer Intern')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================= INTERNSHIP 4 ================= -->
+
+                    <article
+                        class="job-card"
+                        data-title="Full Stack Developer Intern"
+                        data-company="InnovateTech"
+                        data-location="hyderabad"
+                        data-duration="3-6"
+                        data-type="onsite"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                IT
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveInternship(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            On-site
+                        </span>
+
+
+                        <h3>
+                            Full Stack Developer Intern
+                        </h3>
+
+
+                        <p class="company-name">
+                            InnovateTech
+                        </p>
+
+
+                        <p class="job-location">
+                            📍 Hyderabad · On-site
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹20,000 – ₹30,000 / month
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    82%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:82%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                            <span>
+                                Node.js
+                            </span>
+
+                            <span>
+                                SQL
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                ⏱ 3 – 6 Months
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyInternship('Full Stack Developer Intern')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================= INTERNSHIP 5 ================= -->
+
+                    <article
+                        class="job-card"
+                        data-title="Web Development Intern"
+                        data-company="DigitalHub"
+                        data-location="chennai"
+                        data-duration="1-3"
+                        data-type="onsite"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                DH
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveInternship(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            On-site
+                        </span>
+
+
+                        <h3>
+                            Web Development Intern
+                        </h3>
+
+
+                        <p class="company-name">
+                            DigitalHub
+                        </p>
+
+
+                        <p class="job-location">
+                            📍 Chennai · On-site
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹10,000 – ₹18,000 / month
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    91%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:91%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                ⏱ 1 – 3 Months
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyInternship('Web Development Intern')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================= INTERNSHIP 6 ================= -->
+
+                    <article
+                        class="job-card"
+                        data-title="Data Analyst Intern"
+                        data-company="DataMind"
+                        data-location="pune"
+                        data-duration="3-6"
+                        data-type="remote"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                DM
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveInternship(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+
+                        <h3>
+                            Data Analyst Intern
+                        </h3>
+
+
+                        <p class="company-name">
+                            DataMind
+                        </p>
+
+
+                        <p class="job-location">
+                            🌐 Remote · Pune
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹15,000 – ₹25,000 / month
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    73%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:73%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                SQL
+                            </span>
+
+                            <span>
+                                Excel
+                            </span>
+
+                            <span>
+                                Data Analysis
+                            </span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                ⏱ 3 – 6 Months
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyInternship('Data Analyst Intern')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- ================= NO RESULTS ================= -->
+
+                <div
+                    id="noInternships"
+                    class="empty-state"
+                    style="display:none;"
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No internships found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filter options.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CAREER CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div>
+
+                        <span class="section-badge">
+                            🚀 Start Building Your Career
+                        </span>
+
+                        <h2>
+                            Not ready for an internship yet?
+                        </h2>
+
+                        <p>
+                            Identify your skill gaps and follow personalized
+                            courses and projects to become internship-ready.
+                        </p>
+
+                    </div>
+
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary"
+                        >
+                            View Recommendations
+                        </a>
+
+                        <a
+                            href="skills.html"
+                            class="btn btn-outline"
+                        >
+                            Improve Skills
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <div>
+
+                    <div class="logo">
+
+                        <span class="logo-mark">
+                            S
+                        </span>
+
+                        <span class="logo-text">
+                            SkillMatch
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Build skills. Discover opportunities.
+                        Shape your career.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+                <p>
+                    Smart Career & Skill Management Platform
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        // ==========================================
+        // GET ELEMENTS
+        // ==========================================
+
+        const internshipSearch =
+            document.getElementById("internshipSearch");
+
+        const locationFilter =
+            document.getElementById("locationFilter");
+
+        const durationFilter =
+            document.getElementById("durationFilter");
+
+        const internshipTypeFilter =
+            document.getElementById("internshipTypeFilter");
+
+        const internships =
+            document.querySelectorAll(".job-card");
+
+        const internshipCount =
+            document.getElementById("internshipCount");
+
+        const noInternships =
+            document.getElementById("noInternships");
+
+
+
+        // ==========================================
+        // FILTER INTERNSHIPS
+        // ==========================================
+
+        function filterInternships() {
+
+            const searchText =
+                internshipSearch.value
+                    .toLowerCase()
+                    .trim();
+
+            const selectedLocation =
+                locationFilter.value;
+
+            const selectedDuration =
+                durationFilter.value;
+
+            const selectedType =
+                internshipTypeFilter.value;
+
+
+            let visibleCount = 0;
+
+
+            internships.forEach(internship => {
+
+                const title =
+                    internship.dataset.title.toLowerCase();
+
+                const company =
+                    internship.dataset.company.toLowerCase();
+
+                const location =
+                    internship.dataset.location;
+
+                const duration =
+                    internship.dataset.duration;
+
+                const type =
+                    internship.dataset.type;
+
+
+                const text =
+                    internship.textContent.toLowerCase();
+
+
+                // Search condition
+
+                const matchesSearch =
+                    searchText === "" ||
+                    title.includes(searchText) ||
+                    company.includes(searchText) ||
+                    text.includes(searchText);
+
+
+                // Location condition
+
+                const matchesLocation =
+                    selectedLocation === "all" ||
+                    location === selectedLocation;
+
+
+                // Duration condition
+
+                const matchesDuration =
+                    selectedDuration === "all" ||
+                    duration === selectedDuration;
+
+
+                // Type condition
+
+                const matchesType =
+                    selectedType === "all" ||
+                    type === selectedType;
+
+
+                // Display result
+
+                if (
+                    matchesSearch &&
+                    matchesLocation &&
+                    matchesDuration &&
+                    matchesType
+                ) {
+
+                    internship.style.display = "";
+
+                    visibleCount++;
+
+                } else {
+
+                    internship.style.display = "none";
+
+                }
+
+            });
+
+
+            internshipCount.textContent =
+                visibleCount + " Internships Found";
+
+
+            if (visibleCount === 0) {
+
+                noInternships.style.display = "block";
+
+            } else {
+
+                noInternships.style.display = "none";
+
+            }
+
+        }
+
+
+
+        // ==========================================
+        // EVENT LISTENERS
+        // ==========================================
+
+        internshipSearch.addEventListener(
+            "input",
+            filterInternships
+        );
+
+        locationFilter.addEventListener(
+            "change",
+            filterInternships
+        );
+
+        durationFilter.addEventListener(
+            "change",
+            filterInternships
+        );
+
+        internshipTypeFilter.addEventListener(
+            "change",
+            filterInternships
+        );
+
+
+
+        // ==========================================
+        // SAVE INTERNSHIP
+        // ==========================================
+
+        function toggleSaveInternship(button) {
+
+            button.classList.toggle("saved");
+
+
+            if (
+                button.classList.contains("saved")
+            ) {
+
+                button.innerHTML = "♥";
+
+            } else {
+
+                button.innerHTML = "♡";
+
+            }
+
+        }
+
+
+
+        // ==========================================
+        // APPLY FOR INTERNSHIP
+        // ==========================================
+
+        function applyInternship(internshipTitle) {
+
+            const confirmApply =
+                confirm(
+                    "Do you want to apply for " +
+                    internshipTitle +
+                    "?"
+                );
+
+
+            if (confirmApply) {
+
+                alert(
+                    "Application started for " +
+                    internshipTitle +
+                    "!"
+                );
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

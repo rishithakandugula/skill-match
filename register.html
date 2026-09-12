@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="register">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    S
+                </span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Login -->
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="btn btn-outline">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= REGISTER SECTION ================= -->
+
+    <main>
+
+        <section class="auth-section">
+
+            <div class="container auth-container">
+
+
+                <!-- ================= LEFT CONTENT ================= -->
+
+                <div class="auth-info">
+
+                    <span class="hero-badge">
+                        🚀 START YOUR JOURNEY
+                    </span>
+
+                    <h1>
+                        Build your skills.
+                        <span>Shape your future.</span>
+                    </h1>
+
+                    <p>
+                        Create your SkillMatch account and get personalized
+                        recommendations for courses, projects, internships,
+                        and jobs based on your skills and career goals.
+                    </p>
+
+
+                    <!-- Benefits -->
+
+                    <div class="auth-benefits">
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+                                🛠️
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Manage Your Skills
+                                </h3>
+
+                                <p>
+                                    Track your skills and proficiency levels.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+                                🤖
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Get Smart Recommendations
+                                </h3>
+
+                                <p>
+                                    Discover learning opportunities based
+                                    on your skill profile.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+                                💼
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Find Career Opportunities
+                                </h3>
+
+                                <p>
+                                    Get matched with internships and jobs.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= REGISTER FORM ================= -->
+
+                <div class="auth-card">
+
+                    <div class="auth-header">
+
+                        <div class="auth-logo">
+                            S
+                        </div>
+
+                        <h2>
+                            Create your account
+                        </h2>
+
+                        <p>
+                            Join SkillMatch and start building your career.
+                        </p>
+
+                    </div>
+
+
+                    <form id="registerForm">
+
+
+                        <!-- Full Name -->
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- College -->
+
+                        <div class="form-group">
+
+                            <label for="college">
+                                College / University
+                            </label>
+
+                            <input
+                                type="text"
+                                id="college"
+                                name="college"
+                                placeholder="Enter your college name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Education -->
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="branch">
+                                    Branch
+                                </label>
+
+                                <select
+                                    id="branch"
+                                    name="branch"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Branch
+                                    </option>
+
+                                    <option value="CSE">
+                                        Computer Science
+                                    </option>
+
+                                    <option value="IT">
+                                        Information Technology
+                                    </option>
+
+                                    <option value="ECE">
+                                        Electronics & Communication
+                                    </option>
+
+                                    <option value="EEE">
+                                        Electrical & Electronics
+                                    </option>
+
+                                    <option value="MECH">
+                                        Mechanical
+                                    </option>
+
+                                    <option value="CIVIL">
+                                        Civil
+                                    </option>
+
+                                    <option value="OTHER">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="year">
+                                    Study Year
+                                </label>
+
+                                <select
+                                    id="year"
+                                    name="year"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Year
+                                    </option>
+
+                                    <option value="1">
+                                        1st Year
+                                    </option>
+
+                                    <option value="2">
+                                        2nd Year
+                                    </option>
+
+                                    <option value="3">
+                                        3rd Year
+                                    </option>
+
+                                    <option value="4">
+                                        4th Year
+                                    </option>
+
+                                    <option value="graduate">
+                                        Graduate
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Career Goal -->
+
+                        <div class="form-group">
+
+                            <label for="careerGoal">
+                                Career Goal
+                            </label>
+
+                            <select
+                                id="careerGoal"
+                                name="careerGoal"
+                                required
+                            >
+
+                                <option value="">
+                                    Select your career goal
+                                </option>
+
+                                <option value="frontend">
+                                    Frontend Developer
+                                </option>
+
+                                <option value="backend">
+                                    Backend Developer
+                                </option>
+
+                                <option value="fullstack">
+                                    Full Stack Developer
+                                </option>
+
+                                <option value="software">
+                                    Software Developer
+                                </option>
+
+                                <option value="data">
+                                    Data Scientist
+                                </option>
+
+                                <option value="datascience">
+                                    Data Analyst
+                                </option>
+
+                                <option value="ai">
+                                    AI / ML Engineer
+                                </option>
+
+                                <option value="cybersecurity">
+                                    Cybersecurity Specialist
+                                </option>
+
+                                <option value="uiux">
+                                    UI/UX Designer
+                                </option>
+
+                                <option value="cloud">
+                                    Cloud Engineer
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Password -->
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                minlength="6"
+                                required
+                            >
+
+                            <small>
+                                Password must contain at least 6 characters.
+                            </small>
+
+                        </div>
+
+
+                        <!-- Confirm Password -->
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                minlength="6"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Terms -->
+
+                        <div class="checkbox-group">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required
+                            >
+
+                            <label for="terms">
+
+                                I agree to the
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="#">
+                                    Privacy Policy
+                                </a>.
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Submit -->
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-full"
+                        >
+                            Create Account →
+                        </button>
+
+
+                        <!-- Login Link -->
+
+                        <div class="auth-footer">
+
+                            <p>
+                                Already have an account?
+
+                                <a href="login.html">
+                                    Login here
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">
+                        S
+                    </span>
+
+                    <span class="logo-text">
+                        SkillMatch
+                    </span>
+
+                </a>
+
+                <p>
+                    Empowering students to build skills,
+                    discover opportunities, and grow their careers.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+
+                <div>
+
+                    <h4>
+                        Platform
+                    </h4>
+
+                    <a href="skills.html">
+                        Skills
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="recommendations.html">
+                        Recommendations
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Opportunities
+                    </h4>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                    <a href="progress.html">
+                        Progress
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Account
+                    </h4>
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                    <a href="register.html">
+                        Register
+                    </a>
+
+                    <a href="profile.html">
+                        Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

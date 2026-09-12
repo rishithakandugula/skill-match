@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="profile">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    S
+                </span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+                <a href="recommendations.html">
+                    Recommendations
+                </a>
+
+            </nav>
+
+
+            <a href="profile.html" class="profile-link active">
+                Profile
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <span class="section-label">
+                Your Account
+            </span>
+
+            <h1>
+                My Profile
+            </h1>
+
+            <p>
+                Manage your personal information, education,
+                career goals and professional links.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <main>
+
+        <section class="profile-section">
+
+            <div class="container">
+
+                <div class="profile-layout">
+
+
+                    <!-- ================= PROFILE CARD ================= -->
+
+                    <aside class="profile-sidebar">
+
+                        <div class="profile-card">
+
+                            <div class="profile-avatar">
+                                S
+                            </div>
+
+                            <h2 id="profileName">
+                                Student
+                            </h2>
+
+                            <p id="profileEmail">
+                                student@example.com
+                            </p>
+
+                            <span class="profile-status">
+                                Active Learner
+                            </span>
+
+
+                            <div class="profile-stats">
+
+                                <div>
+
+                                    <strong id="profileSkillCount">
+                                        6
+                                    </strong>
+
+                                    <span>
+                                        Skills
+                                    </span>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong id="profileCourseCount">
+                                        4
+                                    </strong>
+
+                                    <span>
+                                        Courses
+                                    </span>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong id="profileProjectCount">
+                                        3
+                                    </strong>
+
+                                    <span>
+                                        Projects
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Profile Navigation -->
+
+                        <div class="profile-menu">
+
+                            <a
+                                href="#personal-info"
+                                class="active">
+
+                                👤 Personal Information
+
+                            </a>
+
+
+                            <a href="#education">
+
+                                🎓 Education
+
+                            </a>
+
+
+                            <a href="#career">
+
+                                🎯 Career Preferences
+
+                            </a>
+
+
+                            <a href="#professional">
+
+                                💼 Professional Links
+
+                            </a>
+
+                        </div>
+
+                    </aside>
+
+
+
+                    <!-- ================= PROFILE CONTENT ================= -->
+
+                    <div class="profile-content">
+
+
+                        <!-- ================= PERSONAL INFORMATION ================= -->
+
+                        <div
+                            class="profile-form-card"
+                            id="personal-info">
+
+                            <div class="section-heading">
+
+                                <div>
+
+                                    <span class="section-label">
+                                        Personal Details
+                                    </span>
+
+                                    <h2>
+                                        Personal Information
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <form id="profileForm">
+
+
+                                <div class="form-grid">
+
+
+                                    <!-- Full Name -->
+
+                                    <div class="form-group">
+
+                                        <label for="fullName">
+                                            Full Name
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="fullName"
+                                            name="fullName"
+                                            placeholder="Enter your full name"
+                                            value="Student">
+
+                                    </div>
+
+
+                                    <!-- Email -->
+
+                                    <div class="form-group">
+
+                                        <label for="email">
+                                            Email Address
+                                        </label>
+
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Enter your email"
+                                            value="student@example.com">
+
+                                    </div>
+
+
+                                    <!-- Phone -->
+
+                                    <div class="form-group">
+
+                                        <label for="phone">
+                                            Phone Number
+                                        </label>
+
+                                        <input
+                                            type="tel"
+                                            id="phone"
+                                            name="phone"
+                                            placeholder="Enter your phone number">
+
+                                    </div>
+
+
+                                    <!-- Location -->
+
+                                    <div class="form-group">
+
+                                        <label for="location">
+                                            Location
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="location"
+                                            name="location"
+                                            placeholder="City, State">
+
+                                    </div>
+
+
+                                    <!-- About -->
+
+                                    <div class="form-group full-width">
+
+                                        <label for="about">
+                                            About Me
+                                        </label>
+
+                                        <textarea
+                                            id="about"
+                                            name="about"
+                                            rows="4"
+                                            placeholder="Write a short description about yourself..."></textarea>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-actions">
+
+                                    <button
+                                        type="submit"
+                                        class="primary-btn">
+
+                                        Save Changes
+
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+
+                        <!-- ================= EDUCATION ================= -->
+
+                        <div
+                            class="profile-form-card"
+                            id="education">
+
+                            <div class="section-heading">
+
+                                <div>
+
+                                    <span class="section-label">
+                                        Academic Details
+                                    </span>
+
+                                    <h2>
+                                        Education
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+
+                                <!-- College -->
+
+                                <div class="form-group full-width">
+
+                                    <label for="college">
+                                        College / University
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="college"
+                                        placeholder="Enter college or university">
+
+                                </div>
+
+
+                                <!-- Degree -->
+
+                                <div class="form-group">
+
+                                    <label for="degree">
+                                        Degree
+                                    </label>
+
+                                    <select id="degree">
+
+                                        <option value="">
+                                            Select Degree
+                                        </option>
+
+                                        <option>
+                                            B.Tech
+                                        </option>
+
+                                        <option>
+                                            B.E
+                                        </option>
+
+                                        <option>
+                                            B.Sc
+                                        </option>
+
+                                        <option>
+                                            BCA
+                                        </option>
+
+                                        <option>
+                                            MCA
+                                        </option>
+
+                                        <option>
+                                            M.Tech
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Branch -->
+
+                                <div class="form-group">
+
+                                    <label for="branch">
+                                        Branch / Specialization
+                                    </label>
+
+                                    <select id="branch">
+
+                                        <option value="">
+                                            Select Branch
+                                        </option>
+
+                                        <option>
+                                            Computer Science
+                                        </option>
+
+                                        <option>
+                                            Information Technology
+                                        </option>
+
+                                        <option>
+                                            Electronics & Communication
+                                        </option>
+
+                                        <option>
+                                            Electrical Engineering
+                                        </option>
+
+                                        <option>
+                                            Mechanical Engineering
+                                        </option>
+
+                                        <option>
+                                            Civil Engineering
+                                        </option>
+
+                                        <option>
+                                            Other
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Study Year -->
+
+                                <div class="form-group">
+
+                                    <label for="studyYear">
+                                        Current Year
+                                    </label>
+
+                                    <select id="studyYear">
+
+                                        <option>
+                                            1st Year
+                                        </option>
+
+                                        <option>
+                                            2nd Year
+                                        </option>
+
+                                        <option>
+                                            3rd Year
+                                        </option>
+
+                                        <option>
+                                            4th Year
+                                        </option>
+
+                                        <option>
+                                            Graduate
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Graduation -->
+
+                                <div class="form-group">
+
+                                    <label for="graduationYear">
+                                        Graduation Year
+                                    </label>
+
+                                    <select id="graduationYear">
+
+                                        <option>
+                                            2026
+                                        </option>
+
+                                        <option>
+                                            2027
+                                        </option>
+
+                                        <option>
+                                            2028
+                                        </option>
+
+                                        <option>
+                                            2029
+                                        </option>
+
+                                        <option>
+                                            2030
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ================= CAREER PREFERENCES ================= -->
+
+                        <div
+                            class="profile-form-card"
+                            id="career">
+
+                            <div class="section-heading">
+
+                                <div>
+
+                                    <span class="section-label">
+                                        Career
+                                    </span>
+
+                                    <h2>
+                                        Career Preferences
+                                    </h2>
+
+                                    <p>
+                                        These preferences help SkillMatch
+                                        generate personalized recommendations.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+
+                                <!-- Career Goal -->
+
+                                <div class="form-group full-width">
+
+                                    <label for="careerGoal">
+                                        Target Career
+                                    </label>
+
+                                    <select id="careerGoal">
+
+                                        <option>
+                                            Frontend Developer
+                                        </option>
+
+                                        <option>
+                                            Backend Developer
+                                        </option>
+
+                                        <option>
+                                            Full Stack Developer
+                                        </option>
+
+                                        <option>
+                                            Software Developer
+                                        </option>
+
+                                        <option>
+                                            Data Scientist
+                                        </option>
+
+                                        <option>
+                                            Data Analyst
+                                        </option>
+
+                                        <option>
+                                            AI / ML Engineer
+                                        </option>
+
+                                        <option>
+                                            Cybersecurity Specialist
+                                        </option>
+
+                                        <option>
+                                            UI / UX Designer
+                                        </option>
+
+                                        <option>
+                                            Cloud Engineer
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Preferred Role -->
+
+                                <div class="form-group">
+
+                                    <label for="preferredRole">
+                                        Preferred Job Role
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="preferredRole"
+                                        placeholder="Example: React Developer">
+
+                                </div>
+
+
+                                <!-- Preferred Location -->
+
+                                <div class="form-group">
+
+                                    <label for="preferredLocation">
+                                        Preferred Work Location
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="preferredLocation"
+                                        placeholder="Example: Hyderabad">
+
+                                </div>
+
+
+                                <!-- Career Level -->
+
+                                <div class="form-group">
+
+                                    <label for="careerLevel">
+                                        Career Level
+                                    </label>
+
+                                    <select id="careerLevel">
+
+                                        <option>
+                                            Student
+                                        </option>
+
+                                        <option>
+                                            Fresher
+                                        </option>
+
+                                        <option>
+                                            Entry Level
+                                        </option>
+
+                                        <option>
+                                            Experienced
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- Work Type -->
+
+                                <div class="form-group">
+
+                                    <label for="workType">
+                                        Preferred Work Type
+                                    </label>
+
+                                    <select id="workType">
+
+                                        <option>
+                                            Full Time
+                                        </option>
+
+                                        <option>
+                                            Internship
+                                        </option>
+
+                                        <option>
+                                            Remote
+                                        </option>
+
+                                        <option>
+                                            Hybrid
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ================= PROFESSIONAL LINKS ================= -->
+
+                        <div
+                            class="profile-form-card"
+                            id="professional">
+
+                            <div class="section-heading">
+
+                                <div>
+
+                                    <span class="section-label">
+                                        Professional Profile
+                                    </span>
+
+                                    <h2>
+                                        Professional Links
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-grid">
+
+
+                                <!-- GitHub -->
+
+                                <div class="form-group">
+
+                                    <label for="github">
+                                        GitHub Profile
+                                    </label>
+
+                                    <input
+                                        type="url"
+                                        id="github"
+                                        placeholder="https://github.com/username">
+
+                                </div>
+
+
+                                <!-- LinkedIn -->
+
+                                <div class="form-group">
+
+                                    <label for="linkedin">
+                                        LinkedIn Profile
+                                    </label>
+
+                                    <input
+                                        type="url"
+                                        id="linkedin"
+                                        placeholder="https://linkedin.com/in/username">
+
+                                </div>
+
+
+                                <!-- Portfolio -->
+
+                                <div class="form-group">
+
+                                    <label for="portfolio">
+                                        Portfolio Website
+                                    </label>
+
+                                    <input
+                                        type="url"
+                                        id="portfolio"
+                                        placeholder="https://yourportfolio.com">
+
+                                </div>
+
+
+                                <!-- Resume -->
+
+                                <div class="form-group">
+
+                                    <label for="resume">
+                                        Resume
+                                    </label>
+
+                                    <input
+                                        type="file"
+                                        id="resume"
+                                        accept=".pdf,.doc,.docx">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-actions">
+
+                                <button
+                                    type="button"
+                                    class="primary-btn"
+                                    id="saveProfessional">
+
+                                    Save Professional Profile
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ================= PROFILE ACTIONS ================= -->
+
+                        <div class="profile-actions-card">
+
+                            <div>
+
+                                <h3>
+                                    Ready to improve your career profile?
+                                </h3>
+
+                                <p>
+                                    Update your skills and get personalized
+                                    recommendations.
+                                </p>
+
+                            </div>
+
+
+                            <div class="profile-action-buttons">
+
+                                <a
+                                    href="skills.html"
+                                    class="primary-btn">
+
+                                    Manage Skills
+
+                                </a>
+
+
+                                <a
+                                    href="recommendations.html"
+                                    class="outline-btn">
+
+                                    View Recommendations
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">
+                        S
+                    </span>
+
+                    <span class="logo-text">
+                        SkillMatch
+                    </span>
+
+                </a>
+
+                <p>
+                    Learn the right skills. Build your future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SkillMatch. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+    <script>
+
+        /* ================= PROFILE FORM ================= */
+
+        const profileForm =
+            document.getElementById("profileForm");
+
+
+        if (profileForm) {
+
+            profileForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    event.preventDefault();
+
+                    const profileData = {
+
+                        fullName:
+                            document.getElementById("fullName").value,
+
+                        email:
+                            document.getElementById("email").value,
+
+                        phone:
+                            document.getElementById("phone").value,
+
+                        location:
+                            document.getElementById("location").value,
+
+                        about:
+                            document.getElementById("about").value
+
+                    };
+
+
+                    localStorage.setItem(
+                        "skillMatchProfile",
+                        JSON.stringify(profileData)
+                    );
+
+
+                    document.getElementById(
+                        "profileName"
+                    ).textContent =
+                        profileData.fullName || "Student";
+
+
+                    document.getElementById(
+                        "profileEmail"
+                    ).textContent =
+                        profileData.email ||
+                        "student@example.com";
+
+
+                    alert(
+                        "Profile information saved successfully!"
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* ================= LOAD PROFILE ================= */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const savedProfile =
+                    localStorage.getItem(
+                        "skillMatchProfile"
+                    );
+
+
+                if (!savedProfile) {
+                    return;
+                }
+
+
+                try {
+
+                    const profile =
+                        JSON.parse(savedProfile);
+
+
+                    if (profile.fullName) {
+
+                        document.getElementById(
+                            "fullName"
+                        ).value =
+                            profile.fullName;
+
+                        document.getElementById(
+                            "profileName"
+                        ).textContent =
+                            profile.fullName;
+
+                    }
+
+
+                    if (profile.email) {
+
+                        document.getElementById(
+                            "email"
+                        ).value =
+                            profile.email;
+
+                        document.getElementById(
+                            "profileEmail"
+                        ).textContent =
+                            profile.email;
+
+                    }
+
+
+                    if (profile.phone) {
+
+                        document.getElementById(
+                            "phone"
+                        ).value =
+                            profile.phone;
+
+                    }
+
+
+                    if (profile.location) {
+
+                        document.getElementById(
+                            "location"
+                        ).value =
+                            profile.location;
+
+                    }
+
+
+                    if (profile.about) {
+
+                        document.getElementById(
+                            "about"
+                        ).value =
+                            profile.about;
+
+                    }
+
+                } catch (error) {
+
+                    console.error(
+                        "Unable to load profile:",
+                        error
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* ================= PROFESSIONAL PROFILE ================= */
+
+        const saveProfessional =
+            document.getElementById(
+                "saveProfessional"
+            );
+
+
+        if (saveProfessional) {
+
+            saveProfessional.addEventListener(
+                "click",
+                function () {
+
+                    const professionalData = {
+
+                        github:
+                            document.getElementById("github").value,
+
+                        linkedin:
+                            document.getElementById("linkedin").value,
+
+                        portfolio:
+                            document.getElementById("portfolio").value
+
+                    };
+
+
+                    localStorage.setItem(
+                        "skillMatchProfessional",
+                        JSON.stringify(
+                            professionalData
+                        )
+                    );
+
+
+                    alert(
+                        "Professional profile saved successfully!"
+                    );
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

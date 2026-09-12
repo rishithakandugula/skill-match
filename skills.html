@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Skills — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="skills">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-mark">S</span>
+                <span class="logo-text">SkillMatch</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="skills.html" class="active">Skills</a>
+
+                <a href="courses.html">Courses</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="internships.html">Internships</a>
+
+                <a href="jobs.html">Jobs</a>
+
+            </nav>
+
+            <!-- Profile -->
+            <div class="nav-actions">
+
+                <a href="profile.html" class="profile-link">
+                    👤 Profile
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="page-label">
+                    SKILL MANAGEMENT
+                </span>
+
+                <h1>
+                    My Skills 🛠️
+                </h1>
+
+                <p>
+                    Add and manage your skills to build a stronger
+                    profile and receive better career recommendations.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILL SUMMARY ================= -->
+
+        <section class="skill-summary">
+
+            <div class="container">
+
+                <div class="summary-grid">
+
+                    <!-- Total Skills -->
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon">
+                            🛠️
+                        </div>
+
+                        <div>
+                            <span>Total Skills</span>
+                            <h2 id="totalSkills">8</h2>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Advanced Skills -->
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon">
+                            ⭐
+                        </div>
+
+                        <div>
+                            <span>Advanced Skills</span>
+                            <h2 id="advancedSkills">3</h2>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Skills Improving -->
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon">
+                            📈
+                        </div>
+
+                        <div>
+                            <span>Skills Improving</span>
+                            <h2 id="improvingSkills">5</h2>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Average Level -->
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon">
+                            🎯
+                        </div>
+
+                        <div>
+                            <span>Average Skill Level</span>
+                            <h2 id="averageSkill">72%</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ADD SKILL ================= -->
+
+        <section class="add-skill-section">
+
+            <div class="container">
+
+                <div class="add-skill-card">
+
+                    <div class="add-skill-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                ADD NEW SKILL
+                            </span>
+
+                            <h2>
+                                Add a Skill
+                            </h2>
+
+                            <p>
+                                Add a skill you currently have or want to improve.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form id="skillForm" class="skill-form">
+
+                        <!-- Skill Name -->
+
+                        <div class="form-group">
+
+                            <label for="skillName">
+                                Skill Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="skillName"
+                                name="skillName"
+                                placeholder="Example: JavaScript"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Category -->
+
+                        <div class="form-group">
+
+                            <label for="skillCategory">
+                                Category
+                            </label>
+
+                            <select id="skillCategory" name="skillCategory">
+
+                                <option value="">
+                                    Select Category
+                                </option>
+
+                                <option value="programming">
+                                    Programming
+                                </option>
+
+                                <option value="web">
+                                    Web Development
+                                </option>
+
+                                <option value="database">
+                                    Database
+                                </option>
+
+                                <option value="design">
+                                    Design
+                                </option>
+
+                                <option value="communication">
+                                    Communication
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Skill Level -->
+
+                        <div class="form-group">
+
+                            <label for="skillLevel">
+                                Skill Level
+                            </label>
+
+                            <select id="skillLevel" name="skillLevel" required>
+
+                                <option value="">
+                                    Select Level
+                                </option>
+
+                                <option value="beginner">
+                                    Beginner
+                                </option>
+
+                                <option value="intermediate">
+                                    Intermediate
+                                </option>
+
+                                <option value="advanced">
+                                    Advanced
+                                </option>
+
+                                <option value="expert">
+                                    Expert
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Add Button -->
+
+                        <div class="form-button">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                + Add Skill
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MY SKILLS ================= -->
+
+        <section class="my-skills-section">
+
+            <div class="container">
+
+                <div class="skills-section-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            YOUR SKILLS
+                        </span>
+
+                        <h2>
+                            Skill Portfolio
+                        </h2>
+
+                    </div>
+
+
+                    <!-- Search -->
+
+                    <div class="skill-search">
+
+                        <input
+                            type="search"
+                            id="skillSearch"
+                            placeholder="Search skills..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Skills Grid -->
+
+                <div class="skills-grid" id="skillsContainer">
+
+
+                    <!-- ================= SKILL CARD 1 ================= -->
+
+                    <div class="skill-card" data-skill="HTML">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon">
+                                🌐
+                            </div>
+
+                            <div class="skill-actions">
+
+                                <button
+                                    class="icon-button"
+                                    title="View skill"
+                                    onclick="window.location.href='skill-details.html'"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <span class="skill-category">
+                            Web Development
+                        </span>
+
+
+                        <div class="skill-level">
+
+                            <div class="skill-level-info">
+
+                                <span>
+                                    Advanced
+                                </span>
+
+                                <strong>
+                                    90%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress"
+                                    style="width: 90%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= SKILL CARD 2 ================= -->
+
+                    <div class="skill-card" data-skill="CSS">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon">
+                                🎨
+                            </div>
+
+                            <div class="skill-actions">
+
+                                <button
+                                    class="icon-button"
+                                    title="View skill"
+                                    onclick="window.location.href='skill-details.html'"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <span class="skill-category">
+                            Web Development
+                        </span>
+
+
+                        <div class="skill-level">
+
+                            <div class="skill-level-info">
+
+                                <span>
+                                    Advanced
+                                </span>
+
+                                <strong>
+                                    85%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress"
+                                    style="width: 85%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= SKILL CARD 3 ================= -->
+
+                    <div class="skill-card" data-skill="JavaScript">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon">
+                                ⚡
+                            </div>
+
+                            <div class="skill-actions">
+
+                                <button
+                                    class="icon-button"
+                                    title="View skill"
+                                    onclick="window.location.href='skill-details.html'"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <span class="skill-category">
+                            Programming
+                        </span>
+
+
+                        <div class="skill-level">
+
+                            <div class="skill-level-info">
+
+                                <span>
+                                    Intermediate
+                                </span>
+
+                                <strong>
+                                    65%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress"
+                                    style="width: 65%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= SKILL CARD 4 ================= -->
+
+                    <div class="skill-card" data-skill="Python">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon">
+                                🐍
+                            </div>
+
+                            <div class="skill-actions">
+
+                                <button
+                                    class="icon-button"
+                                    title="View skill"
+                                    onclick="window.location.href='skill-details.html'"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Python
+                        </h3>
+
+                        <span class="skill-category">
+                            Programming
+                        </span>
+
+
+                        <div class="skill-level">
+
+                            <div class="skill-level-info">
+
+                                <span>
+                                    Intermediate
+                                </span>
+
+                                <strong>
+                                    60%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress"
+                                    style="width: 60%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= SKILL CARD 5 ================= -->
+
+                    <div class="skill-card" data-skill="SQL">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon">
+                                🗄️
+                            </div>
+
+                            <div class="skill-actions">
+
+                                <button
+                                    class="icon-button"
+                                    title="View skill"
+                                    onclick="window.location.href='skill-details.html'"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            SQL
+                        </h3>
+
+                        <span class="skill-category">
+                            Database
+                        </span>
+
+
+                        <div class="skill-level">
+
+                            <div class="skill-level-info">
+
+                                <span>
+                                    Intermediate
+                                </span>
+
+                                <strong>
+                                    70%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress"
+                                    style="width: 70%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= SKILL CARD 6 ================= -->
+
+                    <div class="skill-card" data-skill="React">
+
+                        <div class="skill-card-top">
+
+                            <div class="skill-icon">
+                                ⚛️
+                            </div>
+
+                            <div class="skill-actions">
+
+                                <button
+                                    class="icon-button"
+                                    title="View skill"
+                                    onclick="window.location.href='skill-details.html'"
+                                >
+                                    →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            React.js
+                        </h3>
+
+                        <span class="skill-category">
+                            Web Development
+                        </span>
+
+
+                        <div class="skill-level">
+
+                            <div class="skill-level-info">
+
+                                <span>
+                                    Beginner
+                                </span>
+
+                                <strong>
+                                    40%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress"
+                                    style="width: 40%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Empty Search Result -->
+
+                <div
+                    id="noSkills"
+                    class="no-skills"
+                    style="display: none;"
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No skills found
+                    </h3>
+
+                    <p>
+                        Try searching with a different skill name.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILL IMPROVEMENT ================= -->
+
+        <section class="improvement-section">
+
+            <div class="container">
+
+                <div class="improvement-card">
+
+                    <div class="improvement-content">
+
+                        <span class="section-label">
+                            SKILL IMPROVEMENT
+                        </span>
+
+                        <h2>
+                            Want to improve your skills?
+                        </h2>
+
+                        <p>
+                            Take skill assessments and get personalized
+                            recommendations for courses and projects
+                            based on your current skill level.
+                        </p>
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary"
+                        >
+                            Get Recommendations →
+                        </a>
+
+                    </div>
+
+
+                    <div class="improvement-icon">
+                        🚀
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">
+                        S
+                    </span>
+
+                    <span class="logo-text">
+                        SkillMatch
+                    </span>
+
+                </a>
+
+                <p>
+                    Empowering students to build skills,
+                    discover opportunities, and grow their careers.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+
+                    <h4>
+                        Platform
+                    </h4>
+
+                    <a href="skills.html">
+                        Skills
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="recommendations.html">
+                        Recommendations
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Opportunities
+                    </h4>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                    <a href="progress.html">
+                        Progress
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Account
+                    </h4>
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                    <a href="register.html">
+                        Register
+                    </a>
+
+                    <a href="profile.html">
+                        Profile
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+    <script src="skills.js"></script>
+
+</body>
+
+</html>

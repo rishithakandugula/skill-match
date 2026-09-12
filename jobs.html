@@ -1,0 +1,2359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="jobs">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">S</span>
+                <span class="logo-text">SkillMatch</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="projects.html">Projects</a>
+                <a href="internships.html">Internships</a>
+                <a href="jobs.html" class="active">Jobs</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="btn btn-outline">
+                    Login
+                </a>
+
+                <a href="register.html" class="btn btn-primary">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="section-badge">
+                    💼 Career Opportunities
+                </span>
+
+                <h1>
+                    Find Jobs That Match Your Skills
+                </h1>
+
+                <p>
+                    Discover job opportunities based on your skills,
+                    experience, career goals, and skill-match percentage.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH & FILTER ================= -->
+
+        <section class="jobs-search-section">
+
+            <div class="container">
+
+                <div class="search-filter-box">
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <span class="search-icon">🔍</span>
+
+                        <input
+                            type="text"
+                            id="jobSearch"
+                            placeholder="Search jobs, skills, companies..."
+                        >
+
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <select id="locationFilter">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                        <option value="hyderabad">
+                            Hyderabad
+                        </option>
+
+                        <option value="bangalore">
+                            Bangalore
+                        </option>
+
+                        <option value="chennai">
+                            Chennai
+                        </option>
+
+                    </select>
+
+
+                    <!-- Experience -->
+
+                    <select id="experienceFilter">
+
+                        <option value="all">
+                            All Experience Levels
+                        </option>
+
+                        <option value="fresher">
+                            Fresher
+                        </option>
+
+                        <option value="junior">
+                            Junior
+                        </option>
+
+                        <option value="mid">
+                            Mid Level
+                        </option>
+
+                    </select>
+
+
+                    <!-- Job Type -->
+
+                    <select id="jobTypeFilter">
+
+                        <option value="all">
+                            All Job Types
+                        </option>
+
+                        <option value="full-time">
+                            Full Time
+                        </option>
+
+                        <option value="part-time">
+                            Part Time
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= JOBS ================= -->
+
+        <section class="jobs-section">
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <h2>
+                            Recommended Jobs
+                        </h2>
+
+                        <p>
+                            Jobs selected according to your current skill profile.
+                        </p>
+
+                    </div>
+
+                    <span id="jobCount" class="results-count">
+                        6 Jobs Found
+                    </span>
+
+                </div>
+
+
+                <div class="jobs-grid" id="jobsGrid">
+
+
+                    <!-- JOB 1 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Junior Frontend Developer"
+                        data-company="DigitalWorks"
+                        data-location="hyderabad"
+                        data-experience="fresher"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                DW
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                                title="Save Job"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            Junior Frontend Developer
+                        </h3>
+
+                        <p class="company-name">
+                            DigitalWorks
+                        </p>
+
+                        <p class="job-location">
+                            📍 Hyderabad · On-site
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹4 LPA – ₹7 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    92%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:92%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 2 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Junior Frontend Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 2 -->
+
+                    <article
+                        class="job-card"
+                        data-title="React Developer"
+                        data-company="TechWorld"
+                        data-location="bangalore"
+                        data-experience="junior"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                TW
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            React Developer
+                        </h3>
+
+                        <p class="company-name">
+                            TechWorld
+                        </p>
+
+                        <p class="job-location">
+                            📍 Bangalore · Hybrid
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹6 LPA – ₹10 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    85%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:85%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>Git</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 4 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('React Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 3 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Python Developer"
+                        data-company="DataSoft"
+                        data-location="remote"
+                        data-experience="junior"
+                        data-type="remote"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                DS
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+                        <h3>
+                            Python Developer
+                        </h3>
+
+                        <p class="company-name">
+                            DataSoft
+                        </p>
+
+                        <p class="job-location">
+                            🌐 Remote
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹5 LPA – ₹9 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    81%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:81%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>APIs</span>
+                            <span>Git</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 1 week ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Python Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 4 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Full Stack Developer"
+                        data-company="InnovateLabs"
+                        data-location="hyderabad"
+                        data-experience="junior"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                IL
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            Full Stack Developer
+                        </h3>
+
+                        <p class="company-name">
+                            InnovateLabs
+                        </p>
+
+                        <p class="job-location">
+                            📍 Hyderabad · Hybrid
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹7 LPA – ₹12 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    76%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:76%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>SQL</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 3 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Full Stack Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 5 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Junior Web Developer"
+                        data-company="WebSolutions"
+                        data-location="chennai"
+                        data-experience="fresher"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                WS
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            Junior Web Developer
+                        </h3>
+
+                        <p class="company-name">
+                            WebSolutions
+                        </p>
+
+                        <p class="job-location">
+                            📍 Chennai · On-site
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹3.5 LPA – ₹6 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    88%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:88%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 5 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Junior Web Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 6 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Software Developer"
+                        data-company="CodeTech"
+                        data-location="remote"
+                        data-experience="mid"
+                        data-type="remote"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                CT
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+                        <h3>
+                            Software Developer
+                        </h3>
+
+                        <p class="company-name">
+                            CodeTech
+                        </p>
+
+                        <p class="job-location">
+                            🌐 Remote
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹8 LPA – ₹14 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    68%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:68%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 1 week ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Software Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- No Results -->
+
+                <div
+                    id="noJobs"
+                    class="empty-state"
+                    style="display:none;"
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No jobs found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filter options.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREER CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div>
+
+                        <span class="section-badge">
+                            🚀 Improve Your Career Match
+                        </span>
+
+                        <h2>
+                            Don't have the skills for your dream job?
+                        </h2>
+
+                        <p>
+                            SkillMatch identifies your skill gaps and recommends
+                            courses and projects to help you become job-ready.
+                        </p>
+
+                    </div>
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary"
+                        >
+                            View Recommendations
+                        </a>
+
+                        <a
+                            href="skills.html"
+                            class="btn btn-outline"
+                        >
+                            Improve Skills
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <div class="logo">
+                        <span class="logo-mark">S</span>
+                        <span class="logo-text">SkillMatch</span>
+                    </div>
+
+                    <p>
+                        Build skills. Discover opportunities.
+                        Shape your career.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+                <p>
+                    Smart Career & Skill Management Platform
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/script.js"></script>
+
+
+    <script>
+
+        // ==========================================
+        // JOB SEARCH
+        // ==========================================
+
+        const jobSearch = document.getElementById("jobSearch");
+        const locationFilter = document.getElementById("locationFilter");
+        const experienceFilter = document.getElementById("experienceFilter");
+        const jobTypeFilter = document.getElementById("jobTypeFilter");
+
+        const jobs = document.querySelectorAll(".job-card");
+        const jobCount = document.getElementById("jobCount");
+        const noJobs = document.getElementById("noJobs");
+
+
+        function filterJobs() {
+
+            const searchText =
+                jobSearch.value.toLowerCase().trim();
+
+            const location =
+                locationFilter.value;
+
+            const experience =
+                experienceFilter.value;
+
+            const jobType =
+                jobTypeFilter.value;
+
+
+            let visibleJobs = 0;
+
+
+            jobs.forEach(job => {
+
+                const title =
+                    job.dataset.title.toLowerCase();
+
+                const company =
+                    job.dataset.company.toLowerCase();
+
+                const jobLocation =
+                    job.dataset.location;
+
+                const jobExperience =
+                    job.dataset.experience;
+
+                const jobTypeValue =
+                    job.dataset.type;
+
+
+                const matchesSearch =
+                    title.includes(searchText) ||
+                    company.includes(searchText) ||
+                    job.textContent.toLowerCase().includes(searchText);
+
+
+                const matchesLocation =
+                    location === "all" ||
+                    jobLocation === location;
+
+
+                const matchesExperience =
+                    experience === "all" ||
+                    jobExperience === experience;
+
+
+                const matchesType =
+                    jobType === "all" ||
+                    jobTypeValue === jobType;
+
+
+                if (
+                    matchesSearch &&
+                    matchesLocation &&
+                    matchesExperience &&
+                    matchesType
+                ) {
+
+                    job.style.display = "";
+
+                    visibleJobs++;
+
+                } else {
+
+                    job.style.display = "none";
+
+                }
+
+            });
+
+
+            jobCount.textContent =
+                visibleJobs + " Jobs Found";
+
+
+            if (visibleJobs === 0) {
+
+                noJobs.style.display = "block";
+
+            } else {
+
+                noJobs.style.display = "none";
+
+            }
+
+        }
+
+
+        jobSearch.addEventListener(
+            "input",
+            filterJobs
+        );
+
+        locationFilter.addEventListener(
+            "change",
+            filterJobs
+        );
+
+        experienceFilter.addEventListener(
+            "change",
+            filterJobs
+        );
+
+        jobTypeFilter.addEventListener(
+            "change",
+            filterJobs
+        );
+
+
+        // ==========================================
+        // SAVE JOB
+        // ==========================================
+
+        function toggleSaveJob(button) {
+
+            button.classList.toggle("saved");
+
+            if (button.classList.contains("saved")) {
+
+                button.innerHTML = "♥";
+
+            } else {
+
+                button.innerHTML = "♡";
+
+            }
+
+        }
+
+
+        // ==========================================
+        // APPLY JOB
+        // ==========================================
+
+        function applyJob(jobTitle) {
+
+            const confirmApply =
+                confirm(
+                    "Do you want to apply for " +
+                    jobTitle +
+                    "?"
+                );
+
+
+            if (confirmApply) {
+
+                alert(
+                    "Application started for " +
+                    jobTitle +
+                    "!"
+                );
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body data-page="jobs">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">S</span>
+                <span class="logo-text">SkillMatch</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="projects.html">Projects</a>
+                <a href="internships.html">Internships</a>
+                <a href="jobs.html" class="active">Jobs</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="btn btn-outline">
+                    Login
+                </a>
+
+                <a href="register.html" class="btn btn-primary">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="section-badge">
+                    💼 Career Opportunities
+                </span>
+
+                <h1>
+                    Find Jobs That Match Your Skills
+                </h1>
+
+                <p>
+                    Discover job opportunities based on your skills,
+                    experience, career goals, and skill-match percentage.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH & FILTER ================= -->
+
+        <section class="jobs-search-section">
+
+            <div class="container">
+
+                <div class="search-filter-box">
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <span class="search-icon">🔍</span>
+
+                        <input
+                            type="text"
+                            id="jobSearch"
+                            placeholder="Search jobs, skills, companies..."
+                        >
+
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <select id="locationFilter">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                        <option value="hyderabad">
+                            Hyderabad
+                        </option>
+
+                        <option value="bangalore">
+                            Bangalore
+                        </option>
+
+                        <option value="chennai">
+                            Chennai
+                        </option>
+
+                    </select>
+
+
+                    <!-- Experience -->
+
+                    <select id="experienceFilter">
+
+                        <option value="all">
+                            All Experience Levels
+                        </option>
+
+                        <option value="fresher">
+                            Fresher
+                        </option>
+
+                        <option value="junior">
+                            Junior
+                        </option>
+
+                        <option value="mid">
+                            Mid Level
+                        </option>
+
+                    </select>
+
+
+                    <!-- Job Type -->
+
+                    <select id="jobTypeFilter">
+
+                        <option value="all">
+                            All Job Types
+                        </option>
+
+                        <option value="full-time">
+                            Full Time
+                        </option>
+
+                        <option value="part-time">
+                            Part Time
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= JOBS ================= -->
+
+        <section class="jobs-section">
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <h2>
+                            Recommended Jobs
+                        </h2>
+
+                        <p>
+                            Jobs selected according to your current skill profile.
+                        </p>
+
+                    </div>
+
+                    <span id="jobCount" class="results-count">
+                        6 Jobs Found
+                    </span>
+
+                </div>
+
+
+                <div class="jobs-grid" id="jobsGrid">
+
+
+                    <!-- JOB 1 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Junior Frontend Developer"
+                        data-company="DigitalWorks"
+                        data-location="hyderabad"
+                        data-experience="fresher"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                DW
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                                title="Save Job"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            Junior Frontend Developer
+                        </h3>
+
+                        <p class="company-name">
+                            DigitalWorks
+                        </p>
+
+                        <p class="job-location">
+                            📍 Hyderabad · On-site
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹4 LPA – ₹7 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    92%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:92%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 2 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Junior Frontend Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 2 -->
+
+                    <article
+                        class="job-card"
+                        data-title="React Developer"
+                        data-company="TechWorld"
+                        data-location="bangalore"
+                        data-experience="junior"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                TW
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            React Developer
+                        </h3>
+
+                        <p class="company-name">
+                            TechWorld
+                        </p>
+
+                        <p class="job-location">
+                            📍 Bangalore · Hybrid
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹6 LPA – ₹10 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    85%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:85%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>Git</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 4 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('React Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 3 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Python Developer"
+                        data-company="DataSoft"
+                        data-location="remote"
+                        data-experience="junior"
+                        data-type="remote"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                DS
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+                        <h3>
+                            Python Developer
+                        </h3>
+
+                        <p class="company-name">
+                            DataSoft
+                        </p>
+
+                        <p class="job-location">
+                            🌐 Remote
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹5 LPA – ₹9 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    81%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:81%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>APIs</span>
+                            <span>Git</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 1 week ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Python Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 4 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Full Stack Developer"
+                        data-company="InnovateLabs"
+                        data-location="hyderabad"
+                        data-experience="junior"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                IL
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            Full Stack Developer
+                        </h3>
+
+                        <p class="company-name">
+                            InnovateLabs
+                        </p>
+
+                        <p class="job-location">
+                            📍 Hyderabad · Hybrid
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹7 LPA – ₹12 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    76%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:76%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>SQL</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 3 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Full Stack Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 5 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Junior Web Developer"
+                        data-company="WebSolutions"
+                        data-location="chennai"
+                        data-experience="fresher"
+                        data-type="full-time"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                WS
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>
+                            Junior Web Developer
+                        </h3>
+
+                        <p class="company-name">
+                            WebSolutions
+                        </p>
+
+                        <p class="job-location">
+                            📍 Chennai · On-site
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹3.5 LPA – ₹6 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    88%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:88%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 5 days ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Junior Web Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 6 -->
+
+                    <article
+                        class="job-card"
+                        data-title="Software Developer"
+                        data-company="CodeTech"
+                        data-location="remote"
+                        data-experience="mid"
+                        data-type="remote"
+                    >
+
+                        <div class="job-card-top">
+
+                            <div class="company-logo">
+                                CT
+                            </div>
+
+                            <button
+                                class="save-job"
+                                onclick="toggleSaveJob(this)"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+                        <h3>
+                            Software Developer
+                        </h3>
+
+                        <p class="company-name">
+                            CodeTech
+                        </p>
+
+                        <p class="job-location">
+                            🌐 Remote
+                        </p>
+
+
+                        <div class="job-salary">
+                            ₹8 LPA – ₹14 LPA
+                        </div>
+
+
+                        <div class="skill-match">
+
+                            <div class="match-header">
+
+                                <span>
+                                    Skill Match
+                                </span>
+
+                                <strong>
+                                    68%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width:68%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span>Git</span>
+
+                        </div>
+
+
+                        <div class="job-card-bottom">
+
+                            <span>
+                                🕒 Posted 1 week ago
+                            </span>
+
+                            <button
+                                class="btn btn-primary"
+                                onclick="applyJob('Software Developer')"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- No Results -->
+
+                <div
+                    id="noJobs"
+                    class="empty-state"
+                    style="display:none;"
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No jobs found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filter options.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREER CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div>
+
+                        <span class="section-badge">
+                            🚀 Improve Your Career Match
+                        </span>
+
+                        <h2>
+                            Don't have the skills for your dream job?
+                        </h2>
+
+                        <p>
+                            SkillMatch identifies your skill gaps and recommends
+                            courses and projects to help you become job-ready.
+                        </p>
+
+                    </div>
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary"
+                        >
+                            View Recommendations
+                        </a>
+
+                        <a
+                            href="skills.html"
+                            class="btn btn-outline"
+                        >
+                            Improve Skills
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <div class="logo">
+                        <span class="logo-mark">S</span>
+                        <span class="logo-text">SkillMatch</span>
+                    </div>
+
+                    <p>
+                        Build skills. Discover opportunities.
+                        Shape your career.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+                <p>
+                    Smart Career & Skill Management Platform
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        // ==========================================
+        // JOB SEARCH
+        // ==========================================
+
+        const jobSearch = document.getElementById("jobSearch");
+        const locationFilter = document.getElementById("locationFilter");
+        const experienceFilter = document.getElementById("experienceFilter");
+        const jobTypeFilter = document.getElementById("jobTypeFilter");
+
+        const jobs = document.querySelectorAll(".job-card");
+        const jobCount = document.getElementById("jobCount");
+        const noJobs = document.getElementById("noJobs");
+
+
+        function filterJobs() {
+
+            const searchText =
+                jobSearch.value.toLowerCase().trim();
+
+            const location =
+                locationFilter.value;
+
+            const experience =
+                experienceFilter.value;
+
+            const jobType =
+                jobTypeFilter.value;
+
+
+            let visibleJobs = 0;
+
+
+            jobs.forEach(job => {
+
+                const title =
+                    job.dataset.title.toLowerCase();
+
+                const company =
+                    job.dataset.company.toLowerCase();
+
+                const jobLocation =
+                    job.dataset.location;
+
+                const jobExperience =
+                    job.dataset.experience;
+
+                const jobTypeValue =
+                    job.dataset.type;
+
+
+                const matchesSearch =
+                    title.includes(searchText) ||
+                    company.includes(searchText) ||
+                    job.textContent.toLowerCase().includes(searchText);
+
+
+                const matchesLocation =
+                    location === "all" ||
+                    jobLocation === location;
+
+
+                const matchesExperience =
+                    experience === "all" ||
+                    jobExperience === experience;
+
+
+                const matchesType =
+                    jobType === "all" ||
+                    jobTypeValue === jobType;
+
+
+                if (
+                    matchesSearch &&
+                    matchesLocation &&
+                    matchesExperience &&
+                    matchesType
+                ) {
+
+                    job.style.display = "";
+
+                    visibleJobs++;
+
+                } else {
+
+                    job.style.display = "none";
+
+                }
+
+            });
+
+
+            jobCount.textContent =
+                visibleJobs + " Jobs Found";
+
+
+            if (visibleJobs === 0) {
+
+                noJobs.style.display = "block";
+
+            } else {
+
+                noJobs.style.display = "none";
+
+            }
+
+        }
+
+
+        jobSearch.addEventListener(
+            "input",
+            filterJobs
+        );
+
+        locationFilter.addEventListener(
+            "change",
+            filterJobs
+        );
+
+        experienceFilter.addEventListener(
+            "change",
+            filterJobs
+        );
+
+        jobTypeFilter.addEventListener(
+            "change",
+            filterJobs
+        );
+
+
+        // ==========================================
+        // SAVE JOB
+        // ==========================================
+
+        function toggleSaveJob(button) {
+
+            button.classList.toggle("saved");
+
+            if (button.classList.contains("saved")) {
+
+                button.innerHTML = "♥";
+
+            } else {
+
+                button.innerHTML = "♡";
+
+            }
+
+        }
+
+
+        // ==========================================
+        // APPLY JOB
+        // ==========================================
+
+        function applyJob(jobTitle) {
+
+            const confirmApply =
+                confirm(
+                    "Do you want to apply for " +
+                    jobTitle +
+                    "?"
+                );
+
+
+            if (confirmApply) {
+
+                alert(
+                    "Application started for " +
+                    jobTitle +
+                    "!"
+                );
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

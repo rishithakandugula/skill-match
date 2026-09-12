@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommendations — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="recommendations">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+                <span class="logo-mark">S</span>
+                <span class="logo-text">SkillMatch</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="skills.html">Skills</a>
+                <a href="courses.html">Courses</a>
+                <a href="projects.html">Projects</a>
+                <a href="internships.html">Internships</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="recommendations.html" class="active">
+                    Recommendations
+                </a>
+
+            </nav>
+
+            <a href="profile.html" class="profile-link">
+                Profile
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="section-label">
+                    AI-Powered Career Guidance
+                </span>
+
+                <h1>
+                    Personalized Recommendations
+                </h1>
+
+                <p>
+                    Discover courses, projects, internships and jobs
+                    recommended according to your skills and career goals.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREER MATCH ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            Career Match
+                        </span>
+
+                        <h2>
+                            Your Career Compatibility
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div id="careerMatch" class="career-match-container">
+
+                    <!-- JavaScript will insert career match information -->
+
+                    <div class="loading-card">
+                        Calculating your career match...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILL GAPS ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            Skill Gap Analysis
+                        </span>
+
+                        <h2>
+                            Skills You Should Improve
+                        </h2>
+
+                        <p>
+                            Improve these skills to increase your career
+                            opportunities and match percentage.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div id="skillGaps" class="skill-gaps-container">
+
+                    <!-- JavaScript will insert skill gaps -->
+
+                    <div class="loading-card">
+                        Analyzing your skill gaps...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSES ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            Learn
+                        </span>
+
+                        <h2>
+                            Recommended Courses
+                        </h2>
+
+                        <p>
+                            Courses selected according to your current
+                            skills and areas for improvement.
+                        </p>
+                    </div>
+
+                    <a href="courses.html" class="outline-btn">
+                        View All Courses
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="courseRecommendations"
+                    class="recommendation-grid">
+
+                    <!-- JavaScript inserts course cards -->
+
+                    <div class="loading-card">
+                        Loading recommended courses...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">
+                            Practice
+                        </span>
+
+                        <h2>
+                            Recommended Projects
+                        </h2>
+
+                        <p>
+                            Build practical projects to strengthen your
+                            skills and improve your resume.
+                        </p>
+
+                    </div>
+
+                    <a href="projects.html" class="outline-btn">
+                        View All Projects
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="projectRecommendations"
+                    class="recommendation-grid">
+
+                    <!-- JavaScript inserts project cards -->
+
+                    <div class="loading-card">
+                        Loading recommended projects...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTERNSHIPS ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Experience
+                        </span>
+
+                        <h2>
+                            Recommended Internships
+                        </h2>
+
+                        <p>
+                            Find internships that match your current
+                            skills and career interests.
+                        </p>
+
+                    </div>
+
+                    <a href="internships.html" class="outline-btn">
+                        View All Internships
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="internshipRecommendations"
+                    class="recommendation-grid">
+
+                    <!-- JavaScript inserts internship cards -->
+
+                    <div class="loading-card">
+                        Loading recommended internships...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= JOBS ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Career Opportunities
+                        </span>
+
+                        <h2>
+                            Recommended Jobs
+                        </h2>
+
+                        <p>
+                            Explore job opportunities that match your
+                            current skill profile.
+                        </p>
+
+                    </div>
+
+                    <a href="jobs.html" class="outline-btn">
+                        View All Jobs
+                    </a>
+
+                </div>
+
+
+                <div
+                    id="jobRecommendations"
+                    class="recommendation-grid">
+
+                    <!-- JavaScript inserts job cards -->
+
+                    <div class="loading-card">
+                        Loading recommended jobs...
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAREER ROADMAP CTA ================= -->
+
+        <section class="recommendation-cta">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span class="section-label">
+                        Build Your Future
+                    </span>
+
+                    <h2>
+                        Turn Your Skills Into a Career
+                    </h2>
+
+                    <p>
+                        Follow your personalized learning path,
+                        improve your skill gaps and become ready
+                        for your dream career.
+                    </p>
+
+                    <div class="cta-buttons">
+
+                        <a
+                            href="progress.html"
+                            class="primary-btn">
+                            View My Progress
+                        </a>
+
+                        <a
+                            href="skills.html"
+                            class="outline-btn">
+                            Improve My Skills
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">S</span>
+
+                    <span class="logo-text">
+                        SkillMatch
+                    </span>
+
+                </a>
+
+                <p>
+                    Learn the right skills. Build your future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="courses.html">Courses</a>
+                <a href="jobs.html">Jobs</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SkillMatch. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+    <script src="recommendations.js"></script>
+
+</body>
+
+</html>

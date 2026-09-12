@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="dashboard">
+
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    S
+                </span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html" class="active">
+                    Dashboard
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+            </nav>
+
+
+            <!-- Actions -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="profile.html"
+                    class="btn btn-outline"
+                >
+                    Profile
+                </a>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="SkillMatchDashboard.logout()"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+    =========================================== -->
+
+    <main>
+
+
+        <!-- ==========================================
+             DASHBOARD HEADER
+        =========================================== -->
+
+        <section class="dashboard-header">
+
+            <div class="container">
+
+                <div class="dashboard-welcome">
+
+                    <div>
+
+                        <span class="section-badge">
+                            👋 Welcome back
+                        </span>
+
+                        <h1>
+                            Hello, <span id="userName">Alex Johnson</span>!
+                        </h1>
+
+                        <p id="userEmail">
+                            alex@example.com
+                        </p>
+
+                        <p>
+                            Continue building your skills and move
+                            closer to your dream career.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-header-actions">
+
+                        <a
+                            href="skills.html"
+                            class="btn btn-primary"
+                        >
+                            + Add Skill
+                        </a>
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-outline"
+                        >
+                            View Recommendations
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             SUMMARY CARDS
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="dashboard-summary-grid">
+
+
+                    <!-- Average Skill -->
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon">
+                            🧠
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Average Skill
+                            </span>
+
+                            <h2 id="averageSkill">
+                                68%
+                            </h2>
+
+                            <p>
+                                Across all skills
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Courses -->
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon">
+                            📚
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Courses Completed
+                            </span>
+
+                            <h2 id="completedCourses">
+                                4
+                            </h2>
+
+                            <p>
+                                Keep learning
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Projects -->
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon">
+                            💻
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Projects Completed
+                            </span>
+
+                            <h2 id="completedProjects">
+                                3
+                            </h2>
+
+                            <p>
+                                Build your portfolio
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Career Readiness -->
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="stat-icon">
+                            🚀
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Career Readiness
+                            </span>
+
+                            <h2 id="careerReadiness">
+                                72%
+                            </h2>
+
+                            <p>
+                                Keep improving
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             SKILLS + CAREER READINESS
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="dashboard-main-grid">
+
+
+                    <!-- ==================================
+                         SKILL PROGRESS
+                    =================================== -->
+
+                    <div class="dashboard-card">
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <span class="section-badge">
+                                    📊 Skill Development
+                                </span>
+
+                                <h2>
+                                    Your Skill Progress
+                                </h2>
+
+                            </div>
+
+                            <a
+                                href="skills.html"
+                                class="text-link"
+                            >
+                                Manage Skills →
+                            </a>
+
+                        </div>
+
+
+                        <div
+                            id="skillProgressList"
+                            class="skill-progress-list"
+                        >
+
+                            <!-- JavaScript will load skills here -->
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         CAREER READINESS
+                    =================================== -->
+
+                    <div class="dashboard-card">
+
+                        <div class="dashboard-card-header">
+
+                            <div>
+
+                                <span class="section-badge">
+                                    🎯 Career Goal
+                                </span>
+
+                                <h2>
+                                    Career Readiness
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="career-readiness-display">
+
+                            <div class="readiness-circle">
+
+                                <strong id="careerReadiness">
+                                    72%
+                                </strong>
+
+                                <span>
+                                    Ready
+                                </span>
+
+                            </div>
+
+
+                            <div class="readiness-content">
+
+                                <h3>
+                                    You're making great progress!
+                                </h3>
+
+                                <p id="careerReadinessMessage">
+                                    Good progress! Continue improving
+                                    your key skills.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-section">
+
+                            <div class="progress-label">
+
+                                <span>
+                                    Career Readiness
+                                </span>
+
+                                <strong>
+                                    72%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    id="careerReadinessBar"
+                                    class="progress-fill"
+                                    style="width:72%"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary btn-full"
+                        >
+                            Improve Career Match
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             LEARNING PROGRESS
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-card-header">
+
+                        <div>
+
+                            <span class="section-badge">
+                                📈 Learning Progress
+                            </span>
+
+                            <h2>
+                                Your Learning Journey
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="progress.html"
+                            class="text-link"
+                        >
+                            View Full Progress →
+                        </a>
+
+                    </div>
+
+
+                    <div class="learning-progress-grid">
+
+
+                        <!-- Courses -->
+
+                        <div class="learning-progress-item">
+
+                            <div class="learning-icon">
+                                📚
+                            </div>
+
+                            <div class="learning-info">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Courses
+                                    </span>
+
+                                    <strong id="courseProgress">
+                                        50%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div
+                                        id="courseProgressBar"
+                                        class="progress-fill"
+                                        style="width:50%"
+                                    ></div>
+
+                                </div>
+
+                                <p>
+                                    4 of 8 courses completed
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Projects -->
+
+                        <div class="learning-progress-item">
+
+                            <div class="learning-icon">
+                                💻
+                            </div>
+
+                            <div class="learning-info">
+
+                                <div class="progress-label">
+
+                                    <span>
+                                        Projects
+                                    </span>
+
+                                    <strong id="projectProgress">
+                                        60%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div
+                                        id="projectProgressBar"
+                                        class="progress-fill"
+                                        style="width:60%"
+                                    ></div>
+
+                                </div>
+
+                                <p>
+                                    3 of 5 projects completed
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             NEXT LEARNING GOAL
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="next-goal-card">
+
+                    <div class="next-goal-icon">
+                        🎯
+                    </div>
+
+
+                    <div class="next-goal-content">
+
+                        <span>
+                            Your Next Learning Goal
+                        </span>
+
+                        <h2 id="nextLearningGoal">
+                            Improve React from Beginner to Intermediate
+                        </h2>
+
+                        <p>
+                            Strengthening your weakest skill can
+                            significantly improve your career match.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="skills.html"
+                        class="btn btn-primary"
+                    >
+                        Start Learning
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             OPPORTUNITIES
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="dashboard-main-grid">
+
+
+                    <!-- Internships -->
+
+                    <div class="opportunity-card">
+
+                        <div class="opportunity-icon">
+                            🎓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Matching Internships
+                            </span>
+
+                            <h2 id="internshipCount">
+                                6
+                            </h2>
+
+                            <p>
+                                Opportunities matching your skills
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="internships.html"
+                            class="btn btn-outline"
+                        >
+                            Explore
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Jobs -->
+
+                    <div class="opportunity-card">
+
+                        <div class="opportunity-icon">
+                            💼
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Matching Jobs
+                            </span>
+
+                            <h2 id="jobCount">
+                                8
+                            </h2>
+
+                            <p>
+                                Jobs based on your skill profile
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="jobs.html"
+                            class="btn btn-outline"
+                        >
+                            Explore
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PERSONALIZED RECOMMENDATIONS
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-card-header">
+
+                        <div>
+
+                            <span class="section-badge">
+                                ✨ Personalized For You
+                            </span>
+
+                            <h2>
+                                Recommended For You
+                            </h2>
+
+                            <p>
+                                Based on your current skills and career goals.
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="recommendations.html"
+                            class="text-link"
+                        >
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        id="dashboardRecommendations"
+                        class="recommendations-list"
+                    >
+
+                        <!-- JavaScript will load recommendations -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             QUICK ACTIONS
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="quick-actions-card">
+
+                    <div>
+
+                        <span class="section-badge">
+                            ⚡ Quick Actions
+                        </span>
+
+                        <h2>
+                            What do you want to do next?
+                        </h2>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+                        <a
+                            href="skills.html"
+                            class="quick-action"
+                        >
+
+                            <span>
+                                🧠
+                            </span>
+
+                            <strong>
+                                Manage Skills
+                            </strong>
+
+                            <small>
+                                Add or improve skills
+                            </small>
+
+                        </a>
+
+
+                        <a
+                            href="courses.html"
+                            class="quick-action"
+                        >
+
+                            <span>
+                                📚
+                            </span>
+
+                            <strong>
+                                Learn
+                            </strong>
+
+                            <small>
+                                Explore courses
+                            </small>
+
+                        </a>
+
+
+                        <a
+                            href="projects.html"
+                            class="quick-action"
+                        >
+
+                            <span>
+                                💻
+                            </span>
+
+                            <strong>
+                                Build Projects
+                            </strong>
+
+                            <small>
+                                Strengthen your portfolio
+                            </small>
+
+                        </a>
+
+
+                        <a
+                            href="internships.html"
+                            class="quick-action"
+                        >
+
+                            <span>
+                                🎓
+                            </span>
+
+                            <strong>
+                                Find Internship
+                            </strong>
+
+                            <small>
+                                Start your career
+                            </small>
+
+                        </a>
+
+
+                        <a
+                            href="jobs.html"
+                            class="quick-action"
+                        >
+
+                            <span>
+                                💼
+                            </span>
+
+                            <strong>
+                                Find Jobs
+                            </strong>
+
+                            <small>
+                                Explore opportunities
+                            </small>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             FINAL CTA
+        =========================================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div>
+
+                        <span class="section-badge">
+                            🚀 Keep Growing
+                        </span>
+
+                        <h2>
+                            Every skill brings you closer to your dream career.
+                        </h2>
+
+                        <p>
+                            Keep learning, complete projects, improve your
+                            skills and unlock better opportunities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary"
+                        >
+                            Get Recommendations
+                        </a>
+
+                        <a
+                            href="progress.html"
+                            class="btn btn-outline"
+                        >
+                            Track Progress
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <!-- Brand -->
+
+                <div>
+
+                    <div class="logo">
+
+                        <span class="logo-mark">
+                            S
+                        </span>
+
+                        <span class="logo-text">
+                            SkillMatch
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Build skills. Discover opportunities.
+                        Shape your career.
+                    </p>
+
+                </div>
+
+
+                <!-- Footer Links -->
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="skills.html">
+                        Skills
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+                <p>
+                    Smart Career & Skill Management Platform
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+    <script src="dashboard.js"></script>
+
+
+</body>
+
+</html>

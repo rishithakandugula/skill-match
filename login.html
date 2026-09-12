@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="login">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    S
+                </span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a href="register.html" class="profile-link">
+                Register
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= LOGIN SECTION ================= -->
+
+    <main>
+
+        <section class="auth-section">
+
+            <div class="container auth-container">
+
+
+                <!-- ================= LEFT CONTENT ================= -->
+
+                <div class="auth-info">
+
+                    <span class="section-label">
+                        Welcome Back
+                    </span>
+
+                    <h1>
+                        Continue Your
+                        <span>Career Journey</span>
+                    </h1>
+
+                    <p>
+                        Login to manage your skills, track your progress
+                        and discover personalized career opportunities.
+                    </p>
+
+
+                    <div class="auth-benefits">
+
+
+                        <div class="auth-benefit">
+
+                            <div class="auth-benefit-icon">
+                                📊
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Track Your Progress
+                                </h3>
+
+                                <p>
+                                    Monitor your learning and skill growth.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-benefit">
+
+                            <div class="auth-benefit-icon">
+                                🎯
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Get Smart Recommendations
+                                </h3>
+
+                                <p>
+                                    Find courses and opportunities that match
+                                    your skills.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-benefit">
+
+                            <div class="auth-benefit-icon">
+                                🚀
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Build Your Future
+                                </h3>
+
+                                <p>
+                                    Improve your skills and reach your career goals.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= LOGIN FORM ================= -->
+
+                <div class="auth-card">
+
+                    <div class="auth-card-header">
+
+                        <div class="auth-logo">
+                            S
+                        </div>
+
+                        <h2>
+                            Login to SkillMatch
+                        </h2>
+
+                        <p>
+                            Enter your account details to continue.
+                        </p>
+
+                    </div>
+
+
+                    <form id="loginForm">
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="loginEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                required>
+
+                        </div>
+
+
+                        <!-- Password -->
+
+                        <div class="form-group">
+
+                            <div class="form-label-row">
+
+                                <label for="loginPassword">
+                                    Password
+                                </label>
+
+                                <a
+                                    href="#"
+                                    id="forgotPassword">
+
+                                    Forgot Password?
+
+                                </a>
+
+                            </div>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                minlength="6"
+                                required>
+
+                        </div>
+
+
+                        <!-- Remember Me -->
+
+                        <div class="form-checkbox">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                name="rememberMe">
+
+                            <label for="rememberMe">
+                                Remember me
+                            </label>
+
+                        </div>
+
+
+                        <!-- Error Message -->
+
+                        <div
+                            id="loginMessage"
+                            class="form-message">
+
+                        </div>
+
+
+                        <!-- Submit Button -->
+
+                        <button
+                            type="submit"
+                            class="primary-btn auth-submit">
+
+                            Login
+
+                        </button>
+
+
+                        <!-- Divider -->
+
+                        <div class="auth-divider">
+
+                            <span>
+                                OR
+                            </span>
+
+                        </div>
+
+
+                        <!-- Demo Login -->
+
+                        <button
+                            type="button"
+                            class="outline-btn demo-login-btn"
+                            id="demoLogin">
+
+                            Continue with Demo Account
+
+                        </button>
+
+
+                    </form>
+
+
+                    <div class="auth-footer">
+
+                        <p>
+                            Don't have an account?
+                            <a href="register.html">
+                                Create an account
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+
+                    <span class="logo-mark">
+                        S
+                    </span>
+
+                    <span class="logo-text">
+                        SkillMatch
+                    </span>
+
+                </a>
+
+                <p>
+                    Learn the right skills. Build your future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SkillMatch. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+    <script>
+
+        /* ================= LOGIN FORM ================= */
+
+        const loginForm =
+            document.getElementById("loginForm");
+
+        const loginMessage =
+            document.getElementById("loginMessage");
+
+
+        if (loginForm) {
+
+            loginForm.addEventListener(
+                "submit",
+                function (event) {
+
+                    event.preventDefault();
+
+
+                    const email =
+                        document.getElementById(
+                            "loginEmail"
+                        ).value.trim();
+
+
+                    const password =
+                        document.getElementById(
+                            "loginPassword"
+                        ).value.trim();
+
+
+                    if (!email || !password) {
+
+                        showLoginMessage(
+                            "Please enter your email and password.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    if (password.length < 6) {
+
+                        showLoginMessage(
+                            "Password must contain at least 6 characters.",
+                            "error"
+                        );
+
+                        return;
+
+                    }
+
+
+                    const registeredUser =
+                        localStorage.getItem(
+                            "skillMatchUser"
+                        );
+
+
+                    if (registeredUser) {
+
+                        try {
+
+                            const user =
+                                JSON.parse(
+                                    registeredUser
+                                );
+
+
+                            if (
+                                user.email &&
+                                user.email !== email
+                            ) {
+
+                                showLoginMessage(
+                                    "Email address does not match the registered account.",
+                                    "error"
+                                );
+
+                                return;
+
+                            }
+
+                        } catch (error) {
+
+                            console.error(
+                                "Unable to read user data:",
+                                error
+                            );
+
+                        }
+
+                    }
+
+
+                    const loginData = {
+
+                        email: email,
+
+                        loginTime:
+                            new Date().toISOString()
+
+                    };
+
+
+                    localStorage.setItem(
+                        "skillMatchLogin",
+                        JSON.stringify(loginData)
+                    );
+
+
+                    showLoginMessage(
+                        "Login successful! Redirecting...",
+                        "success"
+                    );
+
+
+                    setTimeout(
+                        function () {
+
+                            window.location.href =
+                                "dashboard.html";
+
+                        },
+                        1000
+                    );
+
+                }
+
+            );
+
+        }
+
+
+        /* ================= SHOW LOGIN MESSAGE ================= */
+
+        function showLoginMessage(
+            message,
+            type
+        ) {
+
+            if (!loginMessage) {
+                return;
+            }
+
+            loginMessage.textContent =
+                message;
+
+            loginMessage.className =
+                "form-message " + type;
+
+        }
+
+
+        /* ================= DEMO LOGIN ================= */
+
+        const demoLogin =
+            document.getElementById(
+                "demoLogin"
+            );
+
+
+        if (demoLogin) {
+
+            demoLogin.addEventListener(
+                "click",
+                function () {
+
+                    const demoUser = {
+
+                        fullName: "Demo Student",
+
+                        email: "demo@skillmatch.com",
+
+                        college: "SkillMatch University",
+
+                        branch: "Computer Science",
+
+                        studyYear: "3rd Year",
+
+                        careerGoal: "Frontend Developer"
+
+                    };
+
+
+                    localStorage.setItem(
+                        "skillMatchUser",
+                        JSON.stringify(demoUser)
+                    );
+
+
+                    localStorage.setItem(
+                        "skillMatchLogin",
+                        JSON.stringify({
+                            email: demoUser.email,
+                            loginTime:
+                                new Date().toISOString()
+                        })
+                    );
+
+
+                    showLoginMessage(
+                        "Demo login successful! Redirecting...",
+                        "success"
+                    );
+
+
+                    setTimeout(
+                        function () {
+
+                            window.location.href =
+                                "dashboard.html";
+
+                        },
+                        1000
+                    );
+
+                }
+
+            );
+
+        }
+
+
+        /* ================= FORGOT PASSWORD ================= */
+
+        const forgotPassword =
+            document.getElementById(
+                "forgotPassword"
+            );
+
+
+        if (forgotPassword) {
+
+            forgotPassword.addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+                    alert(
+                        "Password recovery will be available after connecting the backend."
+                    );
+
+                }
+
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

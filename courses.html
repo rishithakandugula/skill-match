@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses — SkillMatch</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="courses">
+
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-mark">
+                    S
+                </span>
+
+                <span class="logo-text">
+                    SkillMatch
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="skills.html">
+                    Skills
+                </a>
+
+                <a href="courses.html" class="active">
+                    Courses
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="internships.html">
+                    Internships
+                </a>
+
+                <a href="jobs.html">
+                    Jobs
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="profile.html"
+                    class="btn btn-outline"
+                >
+                    Profile
+                </a>
+
+                <a
+                    href="login.html"
+                    class="btn btn-primary"
+                >
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         MAIN
+    =========================================== -->
+
+    <main>
+
+
+        <!-- ==========================================
+             PAGE HEADER
+        =========================================== -->
+
+        <section class="page-header">
+
+            <div class="container">
+
+                <span class="section-badge">
+                    📚 Learning Hub
+                </span>
+
+                <h1>
+                    Learn Skills That Build Your Career
+                </h1>
+
+                <p>
+                    Explore personalized courses based on your
+                    current skills, career goals, and skill gaps.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             SEARCH & FILTER
+        =========================================== -->
+
+        <section class="jobs-search-section">
+
+            <div class="container">
+
+                <div class="search-filter-box">
+
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <span class="search-icon">
+                            🔍
+                        </span>
+
+                        <input
+                            type="text"
+                            id="courseSearch"
+                            placeholder="Search courses, skills, technologies..."
+                        >
+
+                    </div>
+
+
+                    <!-- Category -->
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="web">
+                            Web Development
+                        </option>
+
+                        <option value="programming">
+                            Programming
+                        </option>
+
+                        <option value="database">
+                            Database
+                        </option>
+
+                        <option value="ai">
+                            AI & Machine Learning
+                        </option>
+
+                        <option value="career">
+                            Career Skills
+                        </option>
+
+                    </select>
+
+
+                    <!-- Level -->
+
+                    <select id="levelFilter">
+
+                        <option value="all">
+                            All Levels
+                        </option>
+
+                        <option value="beginner">
+                            Beginner
+                        </option>
+
+                        <option value="intermediate">
+                            Intermediate
+                        </option>
+
+                        <option value="advanced">
+                            Advanced
+                        </option>
+
+                    </select>
+
+
+                    <!-- Duration -->
+
+                    <select id="durationFilter">
+
+                        <option value="all">
+                            All Durations
+                        </option>
+
+                        <option value="short">
+                            Under 10 Hours
+                        </option>
+
+                        <option value="medium">
+                            10 – 30 Hours
+                        </option>
+
+                        <option value="long">
+                            30+ Hours
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             PERSONALIZED COURSES
+        =========================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div>
+
+                        <span class="section-badge">
+                            ✨ Personalized
+                        </span>
+
+                        <h2>
+                            Recommended For You
+                        </h2>
+
+                        <p>
+                            Courses selected according to your current skill profile.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-grid">
+
+
+                    <!-- Course 1 -->
+
+                    <article
+                        class="course-card"
+                        data-title="Advanced JavaScript"
+                        data-category="programming"
+                        data-level="advanced"
+                        data-duration="medium"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                JS
+                            </span>
+
+                            <span class="course-level">
+                                Advanced
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Programming
+                            </span>
+
+                            <h3>
+                                Advanced JavaScript
+                            </h3>
+
+                            <p>
+                                Master modern JavaScript, DOM manipulation,
+                                asynchronous programming and APIs.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 18 Hours
+                                </span>
+
+                                <span>
+                                    📖 24 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                                <span>
+                                    DOM
+                                </span>
+
+                                <span>
+                                    APIs
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.8
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=javascript"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 2 -->
+
+                    <article
+                        class="course-card"
+                        data-title="React.js for Beginners"
+                        data-category="web"
+                        data-level="beginner"
+                        data-duration="medium"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                ⚛
+                            </span>
+
+                            <span class="course-level">
+                                Beginner
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                React.js for Beginners
+                            </h3>
+
+                            <p>
+                                Learn React components, props, state,
+                                hooks and modern frontend development.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 20 Hours
+                                </span>
+
+                                <span>
+                                    📖 30 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    React
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                                <span>
+                                    JSX
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.7
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=react"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 3 -->
+
+                    <article
+                        class="course-card"
+                        data-title="Full Stack Web Development"
+                        data-category="web"
+                        data-level="advanced"
+                        data-duration="long"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                🌐
+                            </span>
+
+                            <span class="course-level">
+                                Advanced
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                Full Stack Web Development
+                            </h3>
+
+                            <p>
+                                Build complete web applications using
+                                frontend, backend, APIs and databases.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 45 Hours
+                                </span>
+
+                                <span>
+                                    📖 52 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    HTML
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                                <span>
+                                    Node.js
+                                </span>
+
+                                <span>
+                                    SQL
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.9
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=fullstack"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 4 -->
+
+                    <article
+                        class="course-card"
+                        data-title="Python Programming"
+                        data-category="programming"
+                        data-level="beginner"
+                        data-duration="medium"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                PY
+                            </span>
+
+                            <span class="course-level">
+                                Beginner
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Programming
+                            </span>
+
+                            <h3>
+                                Python Programming
+                            </h3>
+
+                            <p>
+                                Learn Python fundamentals, functions,
+                                data structures and object-oriented programming.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 16 Hours
+                                </span>
+
+                                <span>
+                                    📖 28 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    Python
+                                </span>
+
+                                <span>
+                                    OOP
+                                </span>
+
+                                <span>
+                                    Data Structures
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.8
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=python"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 5 -->
+
+                    <article
+                        class="course-card"
+                        data-title="SQL and Database Management"
+                        data-category="database"
+                        data-level="intermediate"
+                        data-duration="medium"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                DB
+                            </span>
+
+                            <span class="course-level">
+                                Intermediate
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Database
+                            </span>
+
+                            <h3>
+                                SQL & Database Management
+                            </h3>
+
+                            <p>
+                                Learn SQL queries, database design,
+                                joins, relationships and optimization.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 14 Hours
+                                </span>
+
+                                <span>
+                                    📖 22 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    SQL
+                                </span>
+
+                                <span>
+                                    MySQL
+                                </span>
+
+                                <span>
+                                    Database
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.6
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=sql"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 6 -->
+
+                    <article
+                        class="course-card"
+                        data-title="AI and Machine Learning"
+                        data-category="ai"
+                        data-level="advanced"
+                        data-duration="long"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                AI
+                            </span>
+
+                            <span class="course-level">
+                                Advanced
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                AI & Machine Learning
+                            </span>
+
+                            <h3>
+                                AI & Machine Learning
+                            </h3>
+
+                            <p>
+                                Learn machine learning concepts,
+                                algorithms, data preparation and model building.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 40 Hours
+                                </span>
+
+                                <span>
+                                    📖 48 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    Python
+                                </span>
+
+                                <span>
+                                    ML
+                                </span>
+
+                                <span>
+                                    AI
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.9
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=ai"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 7 -->
+
+                    <article
+                        class="course-card"
+                        data-title="Git and GitHub"
+                        data-category="career"
+                        data-level="beginner"
+                        data-duration="short"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                Git
+                            </span>
+
+                            <span class="course-level">
+                                Beginner
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Career Skills
+                            </span>
+
+                            <h3>
+                                Git & GitHub
+                            </h3>
+
+                            <p>
+                                Learn version control, repositories,
+                                branches, commits and collaboration.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 6 Hours
+                                </span>
+
+                                <span>
+                                    📖 15 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    Git
+                                </span>
+
+                                <span>
+                                    GitHub
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.7
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=git"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Course 8 -->
+
+                    <article
+                        class="course-card"
+                        data-title="Interview Preparation"
+                        data-category="career"
+                        data-level="intermediate"
+                        data-duration="short"
+                    >
+
+                        <div class="course-image">
+
+                            <span class="course-icon">
+                                🎯
+                            </span>
+
+                            <span class="course-level">
+                                Intermediate
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Career Skills
+                            </span>
+
+                            <h3>
+                                Technical Interview Preparation
+                            </h3>
+
+                            <p>
+                                Prepare for technical interviews with
+                                coding questions, communication and mock interviews.
+                            </p>
+
+
+                            <div class="course-info">
+
+                                <span>
+                                    ⏱ 8 Hours
+                                </span>
+
+                                <span>
+                                    📖 18 Lessons
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-tags">
+
+                                <span>
+                                    DSA
+                                </span>
+
+                                <span>
+                                    Coding
+                                </span>
+
+                                <span>
+                                    Interview
+                                </span>
+
+                            </div>
+
+
+                            <div class="course-footer">
+
+                                <strong>
+                                    ⭐ 4.8
+                                </strong>
+
+                                <a
+                                    href="course-details.html?course=interview"
+                                    class="btn btn-primary"
+                                >
+                                    Start Learning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- No Results -->
+
+                <div
+                    id="noCourses"
+                    class="empty-state"
+                    style="display:none;"
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No courses found
+                    </h3>
+
+                    <p>
+                        Try another search term or change your filters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==========================================
+             SKILL GAP CTA
+        =========================================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div>
+
+                        <span class="section-badge">
+                            🎯 Skill Gap Analysis
+                        </span>
+
+                        <h2>
+                            Learn what your dream career requires
+                        </h2>
+
+                        <p>
+                            SkillMatch analyzes your current skills and
+                            identifies the courses you should learn next.
+                        </p>
+
+                    </div>
+
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="recommendations.html"
+                            class="btn btn-primary"
+                        >
+                            View My Recommendations
+                        </a>
+
+                        <a
+                            href="skills.html"
+                            class="btn btn-outline"
+                        >
+                            Check My Skills
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <div>
+
+                    <div class="logo">
+
+                        <span class="logo-mark">
+                            S
+                        </span>
+
+                        <span class="logo-text">
+                            SkillMatch
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Build skills. Discover opportunities.
+                        Shape your career.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+
+                    <a href="skills.html">
+                        Skills
+                    </a>
+
+                    <a href="courses.html">
+                        Courses
+                    </a>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <a href="internships.html">
+                        Internships
+                    </a>
+
+                    <a href="jobs.html">
+                        Jobs
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SkillMatch. All rights reserved.
+                </p>
+
+                <p>
+                    Smart Career & Skill Management Platform
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        // ==========================================
+        // COURSE SEARCH & FILTER
+        // ==========================================
+
+        const courseSearch =
+            document.getElementById("courseSearch");
+
+        const categoryFilter =
+            document.getElementById("categoryFilter");
+
+        const levelFilter =
+            document.getElementById("levelFilter");
+
+        const durationFilter =
+            document.getElementById("durationFilter");
+
+        const courseCards =
+            document.querySelectorAll(".course-card");
+
+        const noCourses =
+            document.getElementById("noCourses");
+
+
+        function filterCourses() {
+
+            const searchText =
+                courseSearch.value
+                    .toLowerCase()
+                    .trim();
+
+            const category =
+                categoryFilter.value;
+
+            const level =
+                levelFilter.value;
+
+            const duration =
+                durationFilter.value;
+
+
+            let visibleCourses = 0;
+
+
+            courseCards.forEach(course => {
+
+                const title =
+                    course.dataset.title.toLowerCase();
+
+                const courseCategory =
+                    course.dataset.category;
+
+                const courseLevel =
+                    course.dataset.level;
+
+                const courseDuration =
+                    course.dataset.duration;
+
+                const courseText =
+                    course.textContent.toLowerCase();
+
+
+                const matchesSearch =
+                    searchText === "" ||
+                    title.includes(searchText) ||
+                    courseText.includes(searchText);
+
+
+                const matchesCategory =
+                    category === "all" ||
+                    courseCategory === category;
+
+
+                const matchesLevel =
+                    level === "all" ||
+                    courseLevel === level;
+
+
+                const matchesDuration =
+                    duration === "all" ||
+                    courseDuration === duration;
+
+
+                if (
+                    matchesSearch &&
+                    matchesCategory &&
+                    matchesLevel &&
+                    matchesDuration
+                ) {
+
+                    course.style.display = "";
+
+                    visibleCourses++;
+
+                } else {
+
+                    course.style.display = "none";
+
+                }
+
+            });
+
+
+            if (visibleCourses === 0) {
+
+                noCourses.style.display = "block";
+
+            } else {
+
+                noCourses.style.display = "none";
+
+            }
+
+        }
+
+
+        // ==========================================
+        // EVENT LISTENERS
+        // ==========================================
+
+        courseSearch.addEventListener(
+            "input",
+            filterCourses
+        );
+
+        categoryFilter.addEventListener(
+            "change",
+            filterCourses
+        );
+
+        levelFilter.addEventListener(
+            "change",
+            filterCourses
+        );
+
+        durationFilter.addEventListener(
+            "change",
+            filterCourses
+        );
+
+    </script>
+
+
+</body>
+
+</html>
